@@ -3,6 +3,8 @@ const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const mongoose = require("mongoose");
 const command = require("./handlers/command");
 const port = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
 const client = new Client({
     intents: [GatewayIntentBits.Guilds]
 });
@@ -19,6 +21,6 @@ if (process.env.MONGO) {
 }
 
 client.login(process.env.TOKEN);
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
+app.listen(port, () => {
+    console.log(`Bot is running on port ${port}`);
+});
