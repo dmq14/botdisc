@@ -19,3 +19,6 @@ if (process.env.MONGO) {
 }
 
 client.login(process.env.TOKEN);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
