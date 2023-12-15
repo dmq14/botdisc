@@ -2,7 +2,7 @@ require("dotenv").config();
 const {Client, GatewayIntentBits, Collection} = require('discord.js');
 const mongoose = require("mongoose");
 const command = require("./handlers/command");
-
+const port = process.env.PORT || 3000;
 const client = new Client({
     intents : [GatewayIntentBits.Guilds]
 });
