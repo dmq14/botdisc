@@ -20,7 +20,7 @@ module.exports = {
         }
 
         // Gửi thông tin đến máy chủ Express
-        const response = await fetch("http://localhost:3000/api/comment", {
+        const response = await fetch("https://serverbot-pxos.onrender.com/api/comment", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
