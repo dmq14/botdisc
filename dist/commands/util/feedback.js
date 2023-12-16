@@ -41,6 +41,6 @@ module.exports = {
             content: `Thanks for reaching out! We will be passing this along to the team directly! Good luck playing the game!`
         });
 
-        interaction.setCountdown(8000);
+        // interaction.setCountdown(8000);
     }
 };
