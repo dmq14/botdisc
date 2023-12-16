@@ -21,6 +21,9 @@ if (process.env.MONGO) {
 }
 
 client.login(process.env.TOKEN);
+app.get('/keep-alive', (req, res) => {
+    res.send('Bot is alive!');
+});
 app.listen(port, () => {
     console.log(`Bot is running on port ${port}`);
 });
